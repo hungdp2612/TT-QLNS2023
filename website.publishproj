@@ -18,7 +18,7 @@ Copyright (C) Microsoft Corporation. All rights reserved.
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{26bebdaf-0f3b-452e-9ebe-dd3c488ea20b}</ProjectGuid>
     <SourceWebPhysicalPath>$(MSBuildThisFileDirectory)</SourceWebPhysicalPath>
-    <SourceWebVirtualPath>/QLNS2013</SourceWebVirtualPath>
+    <SourceWebVirtualPath>/TT-QLNS2023</SourceWebVirtualPath>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <SourceWebProject>
     </SourceWebProject>
