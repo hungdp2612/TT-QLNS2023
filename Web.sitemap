@@ -40,6 +40,7 @@
       <siteMapNode title="-------------------------------------------"/>
       <siteMapNode title="Xem kế hoạch ngân sách Tháng" url="~/Tracuu/Xemkehoachngansach.aspx"/>
       <siteMapNode title="Tra cứu kế hoạch ngân sách" url="~/Tracuu/Tracuukehoachngansachqui.aspx"/>
+	  <siteMapNode title="Xuất kế hoạch ngân sách tháng" url="~/Tracuu/XuatExcelKHNSThang.aspx"/>
     </siteMapNode>
     <siteMapNode title="Tạm ứng- thanh toán">
       <siteMapNode title="Lập phiếu tạm ứng" url="~/Chuongtrinh/LapTamUng.aspx"/>
