@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="All">
+    <siteMapNode title="Trang chủ"  url="~/sites/trangchu.aspx">
+    </siteMapNode>
+    <siteMapNode title="Hệ thống">
+      <siteMapNode title="Phân quyền" url="~/admin/PhanQuyen.aspx"/>
+    </siteMapNode>
+    <siteMapNode title="Danh mục">
+      <siteMapNode title="Qui định thời gian lập ngân sách" url="~/DanhMuc/QuyDinhThoiGianLapNS.aspx"/>
+      <siteMapNode title="Khóa / mở khóa thời gian xem xét ngân sách" url="~/Danhmuc/HieuChinhThoiGianLapNS.aspx"/>
+      <siteMapNode title="Excel danh mục ngân sách" url="~/danhmucngansach.xls"/>
+      <siteMapNode title="Danh mục nhóm ngân sách" url="~/Danhmuc/NhomNganSach.aspx"/>
+      <siteMapNode title="Danh mục ngân sách" url="~/Danhmuc/NganSach.aspx"/>
+      <siteMapNode title="Danh mục chi phí" url="~/Danhmuc/DM_ChiPhi.aspx"/>
+      <siteMapNode title="Danh mục Hệ số trượt giá" url="~/Danhmuc/HESOTRUOTGIA.aspx"/>
+	  <siteMapNode title="Tài khoản ngân hàng" url="~/Danhmuc/TaiKhoanNganHang.aspx"/>
+    </siteMapNode>
+    <siteMapNode title="Kế hoạch">
+      <siteMapNode title="Kế hoạch chi phí" url="~/Chuongtrinh/KeHoachChiPhi.aspx"/>
+      <siteMapNode title="Chi phí thực hiện" url="~/Chuongtrinh/ChiPhi_ThucHien.aspx"/>
+      <siteMapNode title="-------------------------------------------"/>
+      <siteMapNode title="Lập kế hoạch ngân sách" url="~/Chuongtrinh/KeHoachNganSach.aspx"/>
+      <siteMapNode title="Lập kế hoạch ngân sách P.CU - P.HCQT" url="~/Chuongtrinh/KeHoachNganSach_SanXuat.aspx"/>
+      <siteMapNode title="-------------------------------------------"/>
+      <siteMapNode title="Xem xét kế hoạch ngân sách" url="~/Chuongtrinh/KeHoachNganSach_XemXet.aspx"/>
+      <siteMapNode title="Phê duyệt kế hoạch ngân sách" url="~/Chuongtrinh/Kehoachngansach_Pduyet.aspx"/>
+      <siteMapNode title="-------------------------------------------"/>
+      <siteMapNode title="Kế toán xem kế hoạch ngân sách" url="~/Chuongtrinh/Kehoachngansach_KTKiemTra.aspx"/>
+      <siteMapNode title="-------------------------------------------"/>
+      <siteMapNode title="Lập tờ trình" url="~/Chuongtrinh/LapToTrinh.aspx"/>
+      <siteMapNode title="Lập tờ trình (hỗ trợ T.BP HC TTKD)" url="~/Chuongtrinh/LapToTrinh_KDND.aspx"/>
+      <siteMapNode title="-------------------------------------------"/>
+      <siteMapNode title="Xem xét tờ trình" url="~/Chuongtrinh/LapToTrinh_XemXet.aspx"/>
+      <siteMapNode title="Phê duyệt tờ trình" url="~/Chuongtrinh/LapToTrinh_PheDuyet.aspx"/>
+      <siteMapNode title="-------------------------------------------"/>
+      <siteMapNode title="Bổ sung ngân sách (Kế toán)" url="~/Chuongtrinh/LapToTrinh_ketoan.aspx"/>
+      <siteMapNode title="Chuyển ngân sách (Kế toán)" url="~/Chuongtrinh/KeHoachNganSach_ChuyenNS.aspx"/>
+      <siteMapNode title="Kế hoạch doanh thu (Kế toán)" url="~/Chuongtrinh/KeHoachThu.aspx"/>
+      <siteMapNode title="-------------------------------------------"/>
+      <siteMapNode title="Xem kế hoạch ngân sách Tháng" url="~/Tracuu/Xemkehoachngansach.aspx"/>
+      <siteMapNode title="Tra cứu kế hoạch ngân sách" url="~/Tracuu/Tracuukehoachngansachqui.aspx"/>
+    </siteMapNode>
+    <siteMapNode title="Tạm ứng- thanh toán">
+      <siteMapNode title="Lập phiếu tạm ứng" url="~/Chuongtrinh/LapTamUng.aspx"/>
+      <siteMapNode title="Chứng từ thanh toán" url="~/Chuongtrinh/ChungTuThanhToan.aspx"/>
+      <siteMapNode title="-------------------------------------------"/>
+      <siteMapNode title="Kế toán xác nhận phiếu tạm ứng" url="~/Chuongtrinh/LapTamUng_KTKiemTra.aspx"/>
+      <siteMapNode title="Kế toán kiểm tra chứng từ thanh toán" url="~/Chuongtrinh/ChungTuThanhToan_KTKiemTra.aspx"/>
+      <siteMapNode title="-------------------------------------------"/>
+      <siteMapNode title="Kế toán hiệu chỉnh hạn thanh toán giấy DNTT" url="~/Chuongtrinh/HieuChinhHanThanhToan.aspx"/>
+      <siteMapNode title="-------------------------------------------"/>
+      <siteMapNode title="Tra cứu phiếu tạm ứng" url="~/Tracuu/tracuuphieutamung.aspx"/>
+      <siteMapNode title="Tra cứu chứng từ" url="~/Chuongtrinh/TraCuuChungTu.aspx"/>
+      <siteMapNode title="-------------------------------------------"/>
+      <siteMapNode title="Tra cứu chứng từ nộp tiền" url="~/Tracuu/TraCuuChungTuNopTien.aspx"/>
+      <siteMapNode title="Tra cứu hóa đơn điện tử" url="~/Tracuu/TraCuuHoaDonDienTu.aspx"/>
+    </siteMapNode>
+    <siteMapNode title="Báo cáo">
+      <siteMapNode title="Tổng hợp bổ sung ngân sách " url="~/Baocao/Tonghopbosungngansach.aspx"/>
+      <siteMapNode title="Tổng hợp ngân sách " url="~/Baocao/TongHopNganSach.aspx"/>
+      <siteMapNode title="Tổng hợp ngân sách theo phòng ban " url="~/Baocao/Tonghopngansachtheophongban.aspx"/>
+      <siteMapNode title="Tổng hợp thực hiện ngân sách " url="~/Baocao/TongHopThucHienNganSach.aspx"/>
+      <siteMapNode title="Tổng hợp tình hình thực hiện ngân sách " url="~/Baocao/TinhHinhThucHienNganSach.aspx"/>
+    </siteMapNode>
+    <siteMapNode title="Kế hoạch đơn vị">
+      <siteMapNode title="Danh mục">
+        <siteMapNode title="Khoản mục chi phí (P.Mar)" url="~/Danhmuc/DanhMucKhoanMuc_Mar.aspx"/>
+      </siteMapNode>
+      <siteMapNode title="Kế hoạch">
+        <siteMapNode title="Chi phí kế hoạch khoản mục (P.Mar)" url="~/Chuongtrinh/ChiPhiKeHoachKhoanMuc.aspx"/>
+        <siteMapNode title="Chi tiết chi phí kế hoạch khoản mục (P.Mar)" url="~/Chuongtrinh/ChiPhiKeHoachChiTietKhoanMuc_Mar.aspx"/>
+        <siteMapNode title="Xem kế hoạch khoản mục (P.Mar)" url="~/Chuongtrinh/XemKeHoachKhoanMuc_Mar.aspx"/>
+      </siteMapNode>
+      <siteMapNode title="Thanh toán">
+        <siteMapNode title="Thanh toán khoản mục (P.Mar)" url="~/Chuongtrinh/ChiTietThanhToanKhoanMuc_Mar.aspx"/>
+      </siteMapNode>
+    </siteMapNode>
+   
+  </siteMapNode>
+</siteMap>

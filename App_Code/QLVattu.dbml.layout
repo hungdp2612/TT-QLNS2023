@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="QLVattu">
+  <DataContextMoniker Name="/QLVattuDataContext" />
+  <nestedChildShapes>
+    <classShape Id="d3a6ab6c-a2be-49c4-9f99-ce2b53397dbb" absoluteBounds="8.375, 2.25, 2, 5.2323225911458326">
+      <DataClassMoniker Name="/QLVattuDataContext/DMNHANVIEN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="85048e89-5b30-4782-930d-d3dc6ec4be97" absoluteBounds="8.39, 2.71, 1.9700000000000002, 4.672322591145833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="46213a65-7a6f-421c-87c0-d80056562aaa" absoluteBounds="2.75, 2.125, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/QLVattuDataContext/DMDONVI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2e7b36ac-5471-4cb4-9b6e-5eef9018f0a0" absoluteBounds="2.7649999999999997, 2.585, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

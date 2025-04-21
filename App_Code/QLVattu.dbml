@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="wqlvattu" Class="QLVattuDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=192.168.2.20;Initial Catalog=wqlvattu;Persist Security Info=True;User ID=programs" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ConnectDB_wqlvattu" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DMNHANVIEN" Member="DMNHANVIENs">
+    <Type Name="DMNHANVIEN">
+      <Column Name="MANV" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HOTEN" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ChucVu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MADV" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EMail" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LapPhieu" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="TPB_kiemtra" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="XemXet" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="PheDuyet" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="TiepNhan" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Passwordid" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HieuLuc" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="KIEMTRA" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="MABP" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IDMaDV" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="QuanTri" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CMND" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NgayCap" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NoiCap" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="quyencpn" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Chuki" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="TinhGTMay" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="NgayHieuLucPass" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DMDONVI" Member="DMDONVIs">
+    <Type Name="DMDONVI">
+      <Column Name="IDMaDV" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="MaDonVi" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenDonVi" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="KiHieu" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HieuLuc" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="TenGiaoDich_DV" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DiaChi_DV" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SoDienThoai_DV" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Fax_DV" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Thanhpham_Xuat" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Thanhpham_Nhap" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Moc_Nhap" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Moc_Xuat" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BPDatbong" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

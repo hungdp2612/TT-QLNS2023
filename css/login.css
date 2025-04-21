@@ -1,0 +1,10 @@
+.bgtieudebox
+{
+	background-image:url("../images/bg_title.png");
+	background-repeat:repeat-x;
+	height:25px;
+	font-size:12pt;
+	color:White;
+	font-weight:bold;
+
+}

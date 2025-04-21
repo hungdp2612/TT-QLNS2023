@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLNS2013" Class="QLNS2013DBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=192.168.2.182;Initial Catalog=QLNS2013;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ConnectDB_QLNS2013" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DMNganSach" Member="DMNganSaches">
+    <Type Name="DMNganSach">
+      <Column Name="MaNganSach" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DienGiai" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="MaNhomNS" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="HieuLuc_NS" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DmChiPhi" Member="DmChiPhis">
+    <Type Name="DmChiPhi">
+      <Column Name="MSChiPhi" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaNganSach" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DienGiai" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="DienGiai_NS" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="HIEULUC" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MANV" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MANVCN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NgayCN" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DmNhomNganSach" Member="DmNhomNganSaches">
+    <Type Name="DmNhomNganSach">
+      <Column Name="MaNhomNS" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DienGiai" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TaiKhoanNganHang" Member="TaiKhoanNganHangs">
+    <Type Name="TaiKhoanNganHang">
+      <Column Name="MADV" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MANV" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TenNganHang" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="SoTaiKhoan" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TenTaiKhoan" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Ghichu" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="HieuLuc" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ImportTaiKhoanNganHang_tmp" Member="ImportTaiKhoanNganHang_tmps">
+    <Type Name="ImportTaiKhoanNganHang_tmp">
+      <Column Name="MADV" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="MANV" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TENNGANHANG" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="SOTAIKHOAN" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TENTAIKHOAN" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="GHICHU" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="TENMAYTINH" Type="System.String" DbType="VarChar(250) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Chon" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.sp_ChiPhi_DELETE_LOG" Method="sp_ChiPhi_DELETE_LOG">
+    <Parameter Name="MaCP" Parameter="maCP" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="MaNganSach" Parameter="maNganSach" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="MANV" Parameter="mANV" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_ChuyenNganSachThuaCuaThangTruoc" Method="sp_ChuyenNganSachThuaCuaThangTruoc">
+    <Parameter Name="ID_Khoa" Parameter="iD_Khoa" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="MSChiPhi" Parameter="mSChiPhi" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="MaNV" Parameter="maNV" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="sp_ChuyenNganSachThuaCuaThangTruocResult">
+      <Column Name="KetQua" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NgayCapNhat" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Sp_KiemTraNganSachDu" Method="Sp_KiemTraNganSachDu">
+    <Parameter Name="ID_Khoa" Parameter="iD_Khoa" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="MACP" Parameter="mACP" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="Sp_KiemTraNganSachDuResult">
+      <Column Name="Thang" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="Nam" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="MaDV" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MSChiphi" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Sotien" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ID_Khoa" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ID_khoaCT" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Sp_UpdateNganSachSauKhiChuyenThua" Method="Sp_UpdateNganSachSauKhiChuyenThua">
+    <Parameter Name="ID_Khoa" Parameter="iD_Khoa" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="MACP" Parameter="mACP" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Thang" Parameter="thang" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Sp_UpdateNganSachSauKhiChuyenThuaResult">
+      <Column Name="KetQua" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NgayCapNhat" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spInsert_TaiKhoanNganHang" Method="spInsert_TaiKhoanNganHang">
+    <Parameter Name="MADV" Parameter="mADV" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="MANV" Parameter="mANV" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="TenNganHang" Parameter="tenNganHang" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="SoTaiKhoan" Parameter="soTaiKhoan" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Ghichu" Parameter="ghichu" Type="System.String" DbType="NVarChar(MAX)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spDelete_TaiKhoanNganHang" Method="spDelete_TaiKhoanNganHang">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spUpdate_TaiKhoanNganHang" Method="spUpdate_TaiKhoanNganHang">
+    <Parameter Name="MADV" Parameter="mADV" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="MANV" Parameter="mANV" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="TenNganHang" Parameter="tenNganHang" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="SoTaiKhoan" Parameter="soTaiKhoan" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Ghichu" Parameter="ghichu" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

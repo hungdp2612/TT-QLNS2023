@@ -1,0 +1,38 @@
+﻿.header
+{
+	font-family: Tahoma;
+	font-size: 16px;
+	text-align: center;
+	color: #982849;
+	font-weight: bold;
+	background: white;
+}
+
+.headerText
+{
+	font-family: Tahoma;
+	font-size: 14px;
+	text-align: left;
+	color: Blue;
+	font-weight: bold;
+	background: white;
+}
+
+.EditFormHeader
+{
+	background: white;
+	padding: 5px 0px;
+	margin-left:0px;
+	font-size:9pt;
+	font-family:Tahoma;	
+	
+}
+
+.Error
+{
+    font-family: Tahoma Arial;
+    color:Blue;
+    font-size:large;
+    text-align:center;
+}
+
